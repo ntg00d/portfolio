@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>Native JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <header class="header">
+                <div class="header__menu">
+                    <button class="logo"><span class="logo__span">Native</span>JS</button>
+                    <div class="burger-menu">
+                        <button class="burger-menu__btn">
+                            <span class="bmspan bmspan1"></span>
+                            <span class="bmspan bmspan2"></span>
+                            <span class="bmspan bmspan3"></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div class="page-menu">
+                <div class="page-menu__div">
+                    <button class="page-menu__btn" href="#">Calculator</button>
+                </div>
+                <div class="page-menu__div">
+                    <button class="page-menu__btn" href="#">Preloader</button>
+                </div>
+                <div class="page-menu__div">
+                    <button class="page-menu__btn" href="#">Todo list</button>
+                </div>
+                <div class="page-menu__div">
+                    <button class="page-menu__btn" href="#">Search</button>
+                </div>
+            </div>
+
+            <div class="pages">
+                <div class="page__container">
+                    <div class="window-two"></div>
+                    <div class="window-one"></div>
+                    <div class="page page1__bg">
+                        <div class="page__info">
+                            <div class="calculator-grid">
+                                <div class="output">
+                                    <div data-previous-operand class="previous-operand"></div>
+                                    <div data-current-operand class="current-operand"></div>
+                                </div>
+                                <button data-all-clear class="span-two">AC</button>
+                                <button data-delete class="delete">DEL</button>
+                                <button data-operation>/</button>
+                                <button data-number>1</button>
+                                <button data-number>2</button>
+                                <button data-number>3</button>
+                                <button data-operation>*</button>
+                                <button data-number>4</button>
+                                <button data-number>5</button>
+                                <button data-number>6</button>
+                                <button data-operation>+</button>
+                                <button data-number>7</button>
+                                <button data-number>8</button>
+                                <button data-number>9</button>
+                                <button data-operation>-</button>
+                                <button data-number>.</button>
+                                <button data-number>0</button>
+                                <button data-equals class="span-two">=</button>
+                            </div>
+                        </div>
+                        <div class="block-title">Calculator</div>
+                    </div>
+                </div>
+
+                <div class="page__container">
+                    <div class="window-two"></div>
+                    <div class="window-one"></div>
+                    <div class="page page2__bg">
+                        <div class="container2">
+                            <div class="preloader">
+                                <div class="content page__info">
+                                    <svg class="progress-ring" width="350" height="350">
+                                        <circle class="pre-circle" stroke="#dadada" stroke-width="18" cx="175" cy="175" r="139" fill="transparent"></circle>
+                                        <circle class="progress-ring__circle" stroke="#c9a700" stroke-width="18" cx="175" cy="175" r="139" fill="transparent"></circle>
+                                    </svg>
+                                    <div class="content__inputs">
+                                        <div class="input__value input">
+                                            <input value="1" class="input-value-for-js" type="number" min="0" max="100">
+                                            <div class="input__value text">Value</div>
+                                        </div>
+                                        <div class="input__animate input">
+                                            <input class="input-animate-for-js" type="checkbox">
+                                            <div class="input__value text">Animate</div>
+                                        </div>
+                                        <div class="input__hide input">
+                                            <input class="input-hide-for-js" type="checkbox">
+                                            <div class="input__value text">Hide</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-title">Preloader</div>
+                    </div>
+                </div>
+
+                <div class="page__container">
+                    <div class="window-two"></div>
+                    <div class="window-one"></div>
+                    <div class="page page3__bg">
+                        <div class="todo-list page__info">
+                            <div class="todo__enter">
+                                <input type="text" class="todo__input">
+                                <button class="todo__btn">
+                                    <img width="29px" height="29px" src="img/add.svg" alt="">
+                                </button>
+                            </div>
+                            <ul class="todo__result"></ul>
+                            <div class="total-div">
+                                Total:
+                                <span class="todo__total"></span>
+                            </div>
+                        </div>
+                        <div class="block-title">Todo list</div>
+                    </div>
+                </div>
+
+                <div class="page__container">
+                    <div class="window-two"></div>
+                    <div class="window-one"></div>
+                    <div class="page page4__bg">
+                        <div class="search__container">
+                            <div class="search page__info">
+                                <div class="search__form">
+                                    <input class="search__input" type="text">
+                                    <ul class="search__list">
+                                        <li>Lorem</li>
+                                        <li>ipsum</li>
+                                        <li>dolor</li>
+                                        <li>sit</li>
+                                        <li>amet</li>
+                                        <li>consectetur</li>
+                                        <li>adipiscing</li>
+                                        <li>elit</li>
+                                        <li>do</li>
+                                        <li>eiusmod</li>
+                                        <li>tempor</li>
+                                        <li>incididunt</li>
+                                        <li>labore</li>
+                                        <li>voluptas</li>
+                                        <li>suscipit</li>
+                                        <li>modi</li>
+                                        <li>neque</li>
+                                        <li>quos</li>
+                                        <li>repellendus</li>
+                                        <li>aut</li>
+                                        <li>magni</li>
+                                        <li>Itaque</li>
+                                        <li>porro</li>
+                                        <li>expedita</li>
+                                        <li>Consequuntur</li>
+                                        <li>reprehenderit</li>
+                                        <li>mollitia</li>
+                                        <li>soluta</li>
+                                        <li>similique</li>
+                                        <li>excepturi</li>
+                                        <li>ea</li>
+                                        <li>Possimus</li>
+                                        <li>rem</li>
+                                        <li>cumque</li>
+                                        <li>velit</li>
+                                        <li>nesciunt</li>
+                                        <li>blanditiis</li>
+                                        <li>soluta</li>
+                                        <li>officiis</li>
+                                        <li>sint</li>
+                                        <li>quisquam</li>
+                                        <li>delectus</li>
+                                        <li>sequi</li>
+                                        <li>Pariatur</li>
+                                        <li>atque</li>
+                                        <li>laboriosam</li>
+                                        <li>nisi</li>
+                                        <li>omnis</li>
+                                        <li>ipsa</li>
+                                        <li>fuga</li>
+                                        <li>tenetur</li>
+                                        <li>dicta</li>
+                                        <li>ex</li>
+                                        <li>Odit</li>
+                                        <li>alias</li>
+                                        <li>molestias</li>
+                                        <li>nihil</li>
+                                        <li>at</li>
+                                        <li>veritatis</li>
+                                        <li>iusto</li>
+                                        <li>nam</li>
+                                        <li>Aliquid</li>
+                                        <li>earum</li>
+                                        <li>adipisicing</li>
+                                        <li>repellat</li>
+                                        <li>dignissimos</li>
+                                        <li>eveniet</li>
+                                        <li>placeat</li>
+                                        <li>saepe</li>
+                                        <li>hic</li>
+                                        <li>debitis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-title">Search</div>
+                    </div>
+                </div>
+            </div> <!-- .pages -->
+        </div>
+    </div>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/calculator.js"></script>
+<script src="scripts/preloader.js"></script>
+<script src="scripts/todo.js"></script>
+<script src="scripts/search.js"></script>
+</body>
+</html>
