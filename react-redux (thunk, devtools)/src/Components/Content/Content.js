@@ -30,8 +30,8 @@ function Content(props) {
                 <li className='notice__li'>Авторемонтная, 23, 2</li>
             </ul>
             <div className='notice__info'>
-                <div className="notice__info__img">{props.warningSvg}</div>
-                <div className="notice__info__text">База жильцов была создана в Redux для имитации сервера, т.к. некоторые API оказались нерабочими.</div>
+                <div className="notice__info_img">{props.warningSvg}</div>
+                <div className="notice__info_text">База жильцов была создана в Redux для имитации сервера, т.к. некоторые API оказались нерабочими.</div>
             </div>
         </div>
     </>
