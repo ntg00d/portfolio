@@ -1,0 +1,30 @@
+.assets__title {
+    display: none;
+}
+
+.assets__table {
+    height: 70%;
+    overflow: hidden;
+}
+
+.assets__table h2 {
+    margin-bottom: 10px;
+}
+
+.assets__list {
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 910px) {
+    .assets__table {
+        height: 85%;
+    }
+
+    .assets__table h2 {
+        font-size: 18px;
+    }
+}

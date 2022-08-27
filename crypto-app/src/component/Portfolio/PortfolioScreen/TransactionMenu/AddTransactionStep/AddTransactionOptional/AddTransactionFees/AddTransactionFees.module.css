@@ -1,0 +1,78 @@
+.feeWindow {
+    width: 400px;
+    padding: 12px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: -1px 3px 8px 2px rgb(34 60 80 / 51%);
+}
+
+.feeWindow__enter {
+    position: relative;
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.feeWindow__enter span {
+    position: absolute;
+    padding: 10px;
+
+    color: #000;
+    font-size: 18px;
+}
+
+.feeWindow__enter input {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 21px;
+    font-size: 18px;
+
+    border: 0.1px solid rgb(207, 214, 228);
+    border-radius: 10px;
+}
+
+.feeWindow
+.feeWindow__confirm {
+    width: 100%;
+    height: 50px;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+
+    border-radius: 10px;
+    background-color: rgb(56, 97, 251);
+}
+
+.feeWindow
+.feeWindow__confirm:hover {
+    color: #fff;
+    background-color: rgb(33, 59, 155);
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 975px) {
+    .feeWindow {
+        width: 300px;
+        padding: 12px;
+    
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: -1px 3px 8px 2px rgb(34 60 80 / 51%);
+    }
+
+    .feeWindow .feeWindow__confirm {
+        width: 100%;
+        height: 40px;
+    
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+    
+        border-radius: 10px;
+        background-color: rgb(56, 97, 251);
+    }
+}

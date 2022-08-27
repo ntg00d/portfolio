@@ -1,0 +1,43 @@
+.portfolio {
+    display: flex;
+}
+
+.portfolio__menu {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__menu > * {
+    margin-bottom: 15px;
+}
+
+.portfolio__menu > span {
+    width: 93%;
+    border-bottom: .1px solid rgb(224, 224, 224);
+}
+
+.portfolio__links {
+    max-height: 100%;
+    overflow: auto;
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 910px) {
+    .portfolio__links {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    span {
+        display: none;
+    }
+
+    .portfolio__menu {
+        width: 9%;
+    }
+}

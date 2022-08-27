@@ -1,0 +1,63 @@
+.allocation {
+    height: 15%;
+    overflow: auto;
+}
+
+.allocation__bar {
+    display: flex;
+    overflow: hidden;
+
+    margin: 0 5px 4px 5px;
+    border-radius: 8.5px;
+}
+
+.allocation__bar > span {
+    display: block;
+    height: 22px;
+    transition: all .4s;
+}
+
+.allocation__marks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allocation__mark {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    padding: 5px;
+
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+}
+
+.allocation__markDot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.allocation__markName {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+.allocation__markPercent {
+    color: #808a9d;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 910px) {
+    .allocation {
+        display: none;
+    }
+}

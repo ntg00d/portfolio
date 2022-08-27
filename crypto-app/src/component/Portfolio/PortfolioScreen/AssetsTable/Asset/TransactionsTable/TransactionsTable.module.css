@@ -1,0 +1,158 @@
+.transactionsTable {
+    width: 1250px;
+    height: 750px;
+    padding: 20px;
+
+    border-radius: 18px;
+    background-color: #fff;
+    opacity: 1;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 2px 8px 0px rgb(34 60 80 / 20%);
+}
+
+.transactionsTable__info {
+    display: flex;
+
+    color: #515663;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.transactionsTable__info > * {
+    height: 20%;
+    margin-right: 25px;
+}
+
+.transactionsTable__info h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.transactionsTable__balance {
+    margin-bottom: 10px;
+}
+
+.transactionsTable__stats {
+    display: flex;
+}
+
+.transaction__list {
+    max-height: 630px;
+    overflow: auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.transactionsTable__title {
+    height: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2px;
+    margin-bottom: 14px;
+}
+
+.transactionsTable__title p {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.transactionsTable__close {
+    font-weight: 700;
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.transactionsTable__close:hover {
+    background-color: transparent;
+}
+
+.transactionsTable__close > svg {
+    width: 20px;
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 1400px) {
+    .transactionsTable {
+        width: 700px;
+        padding: 10px;
+    }
+
+    .transaction__list {
+        max-height: 335px;
+    }
+
+    .transactionsTable__title {
+        margin-bottom: 5px;
+    }
+
+    .transactionsTable__title p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 735px) {
+    .transactionsTable {
+        width: 550px;
+    }
+}
+
+@media (max-width: 580px) {
+    .transactionsTable {
+        width: 450px;
+    }
+
+    .transactionsTable__info p {
+        font-size: 12px;
+    }
+
+    .transactionsTable__info h4 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .transactionsTable {
+        width: 320px;
+    }
+}
+
+@media (max-height: 1000px) {
+    .transactionsTable {
+        height: 650px;
+    }
+
+    .transaction__list {
+        max-height: 460px;
+    }
+}
+
+@media (max-height: 800px) {
+    .transactionsTable {
+        height: 500px;
+    }
+
+    .transaction__list {
+        max-height: 210px;
+    }
+}
+
+@media (max-height: 540px) {
+    .transactionsTable {
+        height: 330px;
+    }
+
+    .transaction__list {
+        max-height: 210px;
+    }
+}

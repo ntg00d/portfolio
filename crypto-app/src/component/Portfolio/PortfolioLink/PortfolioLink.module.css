@@ -1,0 +1,133 @@
+.portfolio__link {
+    width: 93%;
+    height: 57px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 17px;
+    border-radius: 12px;
+
+    position: relative;
+}
+
+.portfolio__selectMark {
+    width: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+
+    position: absolute;
+    right: 6%;
+    z-index: 1;
+}
+
+.portfolio__link_icon {
+    width: 41px;
+    height: 41px;
+
+    margin: 8px;
+    padding-top: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: rgb(57, 202, 193);
+    color: #fff;
+    font-size: 22px;
+}
+
+.portfolio__link_icon svg {
+    width: 20px;
+    margin-bottom: 1px;
+}
+
+.portfolio__link_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.portfolio__link_info > * {
+    margin: 1px 0;
+}
+
+.portfolio__link_info h4 {
+    font-size: 19px;
+}
+
+.portfolio__link_info h6 {
+    font-weight: 100;
+    font-size: 14px;
+    color: rgb(0, 136, 72);
+}
+
+.portfolio__total
+.portfolio__link_icon {
+    background-color: rgb(56, 97, 251);
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 910px) {
+    .portfolio__total {
+        display: none;
+    }
+
+    .portfolio__link {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .portfolio__link_info {
+        display: none;
+    }
+
+    .portfolio__selectMark {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .portfolio__link_icon {
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 540px) {
+    .portfolio__link_icon {
+        width: 27px;
+        height: 27px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio__link_icon {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+@media (max-width: 420px) {
+    .portfolio__link_icon {
+        width: 17px;
+        height: 17px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio__link_icon {
+        width: 15px;
+        height: 15px;
+        font-size: 6px;
+    }
+}

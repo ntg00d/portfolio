@@ -1,0 +1,33 @@
+.converter {
+    height: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.converter__blocks {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.converter__equal {
+    color: rgb(50, 50, 50);
+    font-size: 47px;
+    margin: 0 15px;
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 540px) {
+    .converter {
+        justify-content: center;
+    }
+
+    .converter__blocks {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+}

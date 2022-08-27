@@ -1,0 +1,141 @@
+img {
+    width: 35px;
+    margin-right: 4px;
+}
+
+p {
+    display: block;
+    margin: 2px 0;
+}
+
+.asset {
+    height: 60px;
+    cursor: pointer;
+    margin-bottom: -1px;
+
+    display: flex;
+    justify-content: space-between;
+
+    transition: .3s all;
+    border-top: .1px solid rgb(224, 224, 224);
+    border-bottom: .1px solid rgb(224, 224, 224);
+}
+
+.asset:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+.asset > * {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.asset > *:last-child {
+    width: 55%;
+}
+
+.assets__title {
+    cursor: default;
+
+    height: 30px;
+    margin-left: 1px;
+
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.assets__title:hover {
+    background-color: transparent;
+}
+
+.asset__name {
+    font-size: 18px;
+}
+
+.asset__name span {
+    margin-left: 1px;
+    font-weight: 100;
+    font-size: 17px;
+    color: rgb(90, 99, 129);
+}
+
+.asset__holdings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    line-height: 1.12;
+}
+
+.asset__holdings h4 {
+    font-weight: 100;
+    font-size: 16px;
+    color: rgb(90, 99, 129);
+}
+
+.asset__remove button {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 2px;
+    padding: 7px;
+    
+    background-color: transparent;
+}
+
+.asset__remove button:hover {
+    background-color: transparent;
+}
+
+.asset__remove button > svg {
+    width: 15px;
+    color: #3f454e;
+}
+
+.asset__remove span {
+    color: #808a9d;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 810px) {
+    .asset {
+        height: 50px;
+    }
+
+    .asset img {
+        width: 33px;
+    }
+
+    .asset > * {
+        font-size: 14px;
+    }
+
+    .asset__name span {
+        display: none;
+    }
+
+    .assets__title {
+        display: none;
+    }
+}
+
+@media (max-width: 730px) {
+    .asset__dayProffit {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .asset__name img {
+        display: none;
+    }
+
+    .asset__price {
+        display: none;
+    }
+}

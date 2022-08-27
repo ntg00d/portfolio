@@ -1,0 +1,38 @@
+img {
+    width: 40px;
+    margin: 5px;
+}
+
+.selectCoinItem {
+    width: 100%;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: transparent;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.selectCoinItem span {
+    font-weight: 100;
+    font-size: 17px;
+    color: rgb(90, 99, 129);
+}
+
+
+
+/* ---------- Media ---------- */
+@media (max-width: 975px) {
+    img {
+        width: 30px;
+    }
+
+    .selectCoinItem {
+        font-size: 16px;
+        min-height: 43px;
+    }
+}
