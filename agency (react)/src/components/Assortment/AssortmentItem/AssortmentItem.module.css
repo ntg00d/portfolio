@@ -1,0 +1,137 @@
+.assortment__item {
+    width: 360px;
+    height: 405px;
+
+    margin: 0 15px 30px 15px;
+    padding: 40px;
+
+    background-color: rgb(129, 111, 111);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    position: relative;
+}
+
+.assortment__item > * {
+    margin-top: 18px;
+}
+
+.assortment__item button {
+    max-width: 110px;
+    padding: 11px;
+    color: #000;
+
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.assortment__item button:hover {
+    background-color: rgb(173, 176, 182);
+}
+
+.assortment__item h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.assortment__delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.assortment__delete svg {
+    margin-left: 3px;
+}
+
+/* --------------------------------- */
+
+.item1 {
+    background: url('../../../img/item1.png') center;
+    background-size: cover;
+}
+
+.item2 {
+    background: url('../../../img/item2.png') center;
+    background-size: cover;
+}
+
+.item3 {
+    background: url('../../../img/item3.png') center;
+    background-size: cover;
+}
+
+.item4 {
+    background: url('../../../img/item4.png') center;
+    background-size: cover;
+}
+
+.item5 {
+    background: url('../../../img/item5.png') center;
+    background-size: cover;
+}
+
+.item6 {
+    background: url('../../../img/item6.png') center;
+    background-size: cover;
+}
+
+.item7 {
+    background: url('../../../img/item7.png') center;
+    background-size: cover;
+}
+
+.item8 {
+    background: url('../../../img/item8.png') center;
+    background-size: cover;
+}
+
+.item9 {
+    background: url('../../../img/item9.png') center;
+    background-size: cover;
+}
+
+/* ---------- Media ---------- */
+@media (max-width: 780px) {
+    .assortment__item {
+        width: 280px;
+        height: 355px;
+    }
+}
+
+@media (max-width: 620px) {
+    .assortment__item {
+        width: 240px;
+        height: 315px;
+    }
+
+    .assortment__item h1 {
+        font-size: 32px;
+    }
+
+    .assortment__item > button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 540px) {
+    .assortment__item {
+        width: 340px;
+        height: 415px;
+    }
+}
+
+@media (max-width: 375px) {
+    .assortment__item {
+        width: 280px;
+        height: 355px;
+    }
+}
